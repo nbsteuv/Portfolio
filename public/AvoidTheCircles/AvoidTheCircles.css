@@ -1,0 +1,85 @@
+
+
+body{
+		background-color:black;
+	}
+
+	.screen{
+		background-color:#257364;
+		height:700px;
+		width:1000px;
+		border:2px black solid;
+		margin:auto;
+		margin-top:-800px;
+		position:relative;
+		z-index:2;
+	}
+	
+	.startbutton{
+		background-color:#2E7A16;
+		height:100px;
+		width:300px;
+		border:2px black solid;
+		border-radius:10px;
+		margin:auto;
+		margin-top:250px;
+		position:relative;
+		z-index:3;
+	}
+	
+	h1{
+		z-index:1;
+	}
+
+	.circle{
+		position:absolute;
+		z-index:3;
+		border:2px black solid;
+	}
+
+	.redcircle{
+		position:absolute;
+		z-index:3;
+		border:2px black solid;
+	}
+
+
+	.space{
+		background-color:#6AA79B;
+		height:900px;
+		width:1200px;
+		border:1px black solid;
+		margin:auto;
+		position:relative;
+		z-index:1;
+	}
+
+	#highscores{
+		background-color:#6AA79B;
+		height:600px;
+		width:600px;
+		margin:auto;
+		margin-top:-800px;
+		position: relative;
+		z-index:9;
+		display:none;
+		border:2px black solid;
+	}
+
+	.resetbutton{
+		background-color:#2E7A16;
+		height:100px;
+		width:300px;
+		border:2px black solid;
+		border-radius:10px;
+		margin:auto;
+		margin-top:0px;
+		position:relative;
+		z-index: 10;
+	}
+
+	.timer{
+		margin-top:0px;
+		position:relative;
+		z-index:10;
+	}

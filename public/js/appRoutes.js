@@ -5,6 +5,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         .when('/', {
             templateUrl: 'views/home.html',
             controller: 'PortfolioController'
+        })
+
+        .when('/AvoidTheCircles', {
+            templateUrl: 'AvoidTheCircles/index.html'
         });
 
     $locationProvider.html5Mode(false);

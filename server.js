@@ -16,10 +16,6 @@ app.get('/', function (req, res) {
     writeFile('/public/views/index.html', req, res);
 });
 
-app.get('/AvoidTheCircles', function (req, res) {
-    writeFile('/public/views/index.html', req, res);
-});
-
 function writeFile(fileName, req, res) {
   fs.readFile(__dirname + fileName, function (err, data) {
     if (err) {
