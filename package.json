@@ -1,0 +1,14 @@
+{
+  "name": "Portfolio",
+  
+
+	"scripts": {
+	  "start": "node server.js"
+	},
+	"main": "server.js",
+
+
+  "dependencies": {
+    "express": "~4.5.1"
+  }
+}
