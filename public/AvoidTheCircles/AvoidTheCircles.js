@@ -2,25 +2,14 @@ $(document).ready(function(){
 
 var circleNumber= 0;
 
-var spaceWidth= $(document).width();
-var spaceHeight= $(document).height();
-
-var screenTopMargin= -(spaceHeight - 180);
-var screenWidth= 0.6 * spaceWidth;
-var screenHeight= 0.7 * spaceHeight;
-
-var buttonTopMargin= 0.35 * screenHeight;
-var buttonWidth= 0.4 * screenWidth;
-var buttonHeight= 0.143 * screenHeight;
-
 var circleTypes={
 	"key":["color", "width", "border-radius", "speed"],
-	"grape":["black", 30, 15, 3000],
-	"softball":["blue", 100, 50, 4000],
-	"beachball":["yellow", 200, 100, 5000]
+	"grape":["black", 5, 2.5, 3000],
+	"softball":["blue", 15, 7.5, 4000],
+	"beachball":["yellow", 30, 15, 5000]
 };
 
-var resetButton= "<div class='resetbutton'><h1><center>Play Again</center></h1></div>";
+var resetButton= "<div class='resetbutton'><h2><center>Play Again</center></h2></div>";
 
 var highScore1= 0.00;
 var highScore2= 0.00;
@@ -40,24 +29,6 @@ $("body").mousemove(function(event){
 });
 
 $("#highscores").slideUp(1);
-
-$(".space").css({
-		"width":spaceWidth,
-		"height":spaceHeight
-});
-
-$(".screen").css({
-		"width":screenWidth,
-		"height":screenHeight,
-		"margin-top":screenTopMargin
-});
-
-$(".startbutton").css({
-		"width":buttonWidth,
-		"height":buttonHeight,
-		"margin-top":buttonTopMargin
-});
-
 
 function timer(){
 		if(gameOn=="true"){
@@ -101,9 +72,9 @@ function createCircle(){
 	$("body").append(newCircle);
 	$("#"+circleName).css({
 		"background-color" : circleColor,
-		"width" : circleSize+"px",
-		"height" : circleSize+"px",
-		"border-radius" : circleRadius+"px",
+		"width" : circleSize+"vmin",
+		"height" : circleSize+"vmin",
+		"border-radius" : circleRadius+"vmin",
 		"top" : circlePositionTop+"px",
 		"left" : circlePositionLeft+"px"
 		});
@@ -111,9 +82,10 @@ function createCircle(){
 	function timeCirclePosition(circleTrackID){
 		setTimeout(function(){
 					var currentCirclePosition = $(circleTrackID).position();
-					var distanceX = mouseX - (currentCirclePosition.left + circleRadius);
-					var distanceY = mouseY - (currentCirclePosition.top + circleRadius);
-					if(Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2)) <= circleRadius) {
+					var calculatedRadius = parseInt($(circleTrackID).css("width")) * 0.5;
+					var distanceX = mouseX - (currentCirclePosition.left + calculatedRadius);
+					var distanceY = mouseY - (currentCirclePosition.top + calculatedRadius);
+					if(Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2)) <= calculatedRadius) {
 						$(circleTrackID).removeClass("circle").addClass("redcircle");
 						$(circleTrackID).css("background-color", "red")
 						endgame();
@@ -133,7 +105,7 @@ function createCircle(){
 	};
 
 function animateCircle(circleId, speed, circleSize, downStart, rightStart) {
-	var bodyWidth= $("body").width() - circleSize;
+	var bodyWidth=$("body").width() - circleSize;
 	var bodyHeight=$("body").height() - circleSize;
 	var circleMoveLeft= (bodyWidth * Math.random()).toFixed();
 	var circleMoveTop= (bodyHeight * Math.random()).toFixed();
@@ -180,15 +152,15 @@ function updateScores(newScore){
 		highScore5=newScore;
 	};
 
-	var highScorePlace1= "<div class='score' id='score1'><h1><center>" + highScore1.toFixed(2) + "</center></h1></div>";
-	var highScorePlace2= "<div class='score' id='score2'><h1><center>" + highScore2.toFixed(2) + "</center></h1></div>";
-	var highScorePlace3= "<div class='score' id='score3'><h1><center>" + highScore3.toFixed(2) + "</center></h1></div>";
-	var highScorePlace4= "<div class='score' id='score4'><h1><center>" + highScore4.toFixed(2) + "</center></h1></div>";
-	var highScorePlace5= "<div class='score' id='score5'><h1><center>" + highScore5.toFixed(2) + "</center></h1></div>";
+	var highScorePlace1= "<div class='score' id='score1'><h2><center>" + highScore1.toFixed(2) + "</center></h2></div>";
+	var highScorePlace2= "<div class='score' id='score2'><h2><center>" + highScore2.toFixed(2) + "</center></h2></div>";
+	var highScorePlace3= "<div class='score' id='score3'><h2><center>" + highScore3.toFixed(2) + "</center></h2></div>";
+	var highScorePlace4= "<div class='score' id='score4'><h2><center>" + highScore4.toFixed(2) + "</center></h2></div>";
+	var highScorePlace5= "<div class='score' id='score5'><h2><center>" + highScore5.toFixed(2) + "</center></h2></div>";
 
 	$("#highscores").append(highScorePlace1, highScorePlace2, highScorePlace3, highScorePlace4, highScorePlace5, resetButton);
 	$("#highscores").slideDown(1000);
-	$("#"+redScore).css("color", "#891828");
+	$("#"+redScore).css("color", "#D10808");
 	$(".resetbutton").click(function(){
 		gameReset();
 	});

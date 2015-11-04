@@ -7,22 +7,21 @@ angular.module('PortfolioCTRL', []).controller('PortfolioController', function($
 	$scope.projects = [
 		{
 			name: "Circle Game",
-			image: "",
+			image: "img/AvoidTheCirclesSnapshot.JPG",
 			tagline: "",
 			description: ""
-
 		},
 		
 		{
-			name: "Workout App C#"
-			image: "",
+			name: "Workout App C#",
+			image: "img/CSharpWorkoutAppSnapshot.JPG",
 			tagline: "",
 			description: ""
 		},
 
 		{
-			name: "Workout App Angular"
-			image: "",
+			name: "Workout App Angular",
+			image: "img/AngularWorkoutAppSnapshot.JPG",
 			tagline: "",
 			description: ""
 		}

@@ -2,33 +2,52 @@
 
 body{
 		background-color:black;
+		height:100%;
+		width:100%;
+	}
+
+	.space{
+		background-color:#D4F4FC;
+		height:100vh;
+		width:100vw;
+		border:1px black solid;
+		margin:auto;
+		position:relative;
+		z-index:1;
 	}
 
 	.screen{
-		background-color:#257364;
-		height:700px;
-		width:1000px;
+		background-color:#FACB96;
+		height:75vh;
+		width:75vw;
 		border:2px black solid;
 		margin:auto;
-		margin-top:-800px;
+		margin-top:-95vh;
 		position:relative;
 		z-index:2;
 	}
 	
 	.startbutton{
-		background-color:#2E7A16;
-		height:100px;
-		width:300px;
+		padding: 2vh;
+		background-color:#57DB48;
+		height:50vh;
+		width:30vw;
 		border:2px black solid;
 		border-radius:10px;
 		margin:auto;
-		margin-top:250px;
+		margin-top:10vh;
 		position:relative;
 		z-index:3;
 	}
 	
 	h1{
 		z-index:1;
+		font-size: 5vmin;
+	}
+
+	h2{
+		z-index:1;
+		font-size: 3vmin;
 	}
 
 	.circle{
@@ -44,22 +63,12 @@ body{
 	}
 
 
-	.space{
-		background-color:#6AA79B;
-		height:900px;
-		width:1200px;
-		border:1px black solid;
-		margin:auto;
-		position:relative;
-		z-index:1;
-	}
-
 	#highscores{
-		background-color:#6AA79B;
-		height:600px;
-		width:600px;
+		background-color: #E3DC14;
+		height:70vh;
+		width:30vw;
 		margin:auto;
-		margin-top:-800px;
+		margin-top:-80vh;
 		position: relative;
 		z-index:9;
 		display:none;
@@ -67,9 +76,10 @@ body{
 	}
 
 	.resetbutton{
-		background-color:#2E7A16;
-		height:100px;
-		width:300px;
+		padding: 2vh;
+		background-color:#57DB48;
+		height:10vh;
+		width:10vw;
 		border:2px black solid;
 		border-radius:10px;
 		margin:auto;
