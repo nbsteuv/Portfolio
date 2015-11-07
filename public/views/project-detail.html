@@ -2,9 +2,9 @@
 	<td class="cell-display-container">
 
 
-		<div class="display-grid project-display" ng-animate-ref={{currentProject.id}}>
+		<div class="display-grid project-display"">
 			
-			<img class="grid" ng-src="{{currentProject.image}}">
+			<img class="grid display" ng-src="{{currentProject.image}}" ng-animate-ref="{{currentProject.image}}">
 			<p>{{currentProject.name}}</p>
 			<p>{{currentProject.tagline}}</p>
 			<p><a href="{{currentProject.github}}">Github</a></p>
