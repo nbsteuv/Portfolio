@@ -4,15 +4,23 @@
 
 	<h1>Behold!</h1>
 
-	<div class="display-grid" ng-repeat="project in projects">
-			<img class="grid" ng-src="{{project.image}}" height="250px" width="300px">
-			{{project.name}}
+	<div class="grid-container">
+
+		<div class="display-grid" 
+			ng-repeat="project in projectsGrid" 
+			ng-animate-ref="{{project.id}}" 
+			ng-click="viewProject(project.id)">
+				<img class="grid" ng-src="{{project.image}}">
+				<p>{{project.name}}</p>
+				<p>{{project.tagline}}</p>
+				<p><a ng-href="/#/project-detail">Check it out.</a></p>
+		</div>
+
 	</div>
-
-	<button ng-click="HelloWorld()">Controller Test</button>
-
 	<br />
-
-	<a href="/AvoidTheCircles">Avoid The Circles</a>
+	<br />
+	<br />
+	<br />
+	<p><a href="/AvoidTheCircles">Avoid The Circles</a>
 
 </div>

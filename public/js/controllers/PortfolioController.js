@@ -1,31 +1,17 @@
-angular.module('PortfolioCTRL', []).controller('PortfolioController', function($scope, $location, $window) {
+angular.module('PortfolioCTRL', []).controller('PortfolioController', function($scope, $rootScope, $location, $window) {
+
+	$scope.currentProject = $rootScope.projects[$rootScope.current];
+
+	$scope.projectsGrid = $rootScope.projects;
 	
-	$scope.HelloWorld = function(){
-		alert("Portfolio Controller is working!");
+	function viewProject(project){
+		$rootScope.current = project;
+
+		alert($rootScope.current);
 	};
 
-	$scope.projects = [
-		{
-			name: "Circle Game",
-			image: "img/AvoidTheCirclesSnapshot.JPG",
-			tagline: "",
-			description: ""
-		},
-		
-		{
-			name: "Workout App C#",
-			image: "img/CSharpWorkoutAppSnapshot.JPG",
-			tagline: "",
-			description: ""
-		},
+	$scope.viewProject = viewProject;
 
-		{
-			name: "Workout App Angular",
-			image: "img/AngularWorkoutAppSnapshot.JPG",
-			tagline: "",
-			description: ""
-		}
-	];
-	
+
 
 });
