@@ -1,8 +1,10 @@
 <div class="home" ng-show="displayGrid">
 	
-	Hello there. I'm Nick and I build stuff. 
+	<div class="title-container">
 
-	<h1>Behold!</h1>
+		<h1 class="title">Hello there. I'm Nick and I build high-quality apps.</h1>
+
+	</div>
 
 	<div class="grid-container">
 
@@ -11,16 +13,11 @@
 			ng-animate-ref="{{project.id}}" 
 			ng-click="viewProject(project.id)">
 				<img class="grid" ng-src="{{project.image}}" ng-animate-ref="{{project.image}}">
-				<p>{{project.name}}</p>
+				<p><strong>{{project.name}}</strong></p>
 				<p>{{project.tagline}}</p>
 				<p><a ng-href="/#/project-detail">Check it out.</a></p>
 		</div>
 
 	</div>
-	<br />
-	<br />
-	<br />
-	<br />
-	<p><a href="/AvoidTheCircles">Avoid The Circles</a>
 
 </div>

@@ -13,8 +13,12 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 app.use(express.static(__dirname + '/public')); 
 
 app.get('/', function (req, res) {
-    writeFile('/public/views/index.html', req, res);
+  writeFile('/public/views/index.html', req, res);
 });
+
+app.get('/WorkoutAppCSharp', function (req, res) {
+  res.download(__dirname + '/public/WorkoutAppCSharp/WorkoutAppC#.zip');
+})
 
 function writeFile(fileName, req, res) {
   fs.readFile(__dirname + fileName, function (err, data) {
