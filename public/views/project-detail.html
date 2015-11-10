@@ -4,8 +4,12 @@
 
 		<div class="project-display">
 
-			<p>{{currentProject.description}}</p>
-			<p><a href="{{currentproject.link}}">Check it out.</a></p>
+			<h3>Description</h3>
+
+			<div class="side-text-container">
+				<p>{{currentProject.description}}</p>
+				<p><a href="{{currentproject.link}}">Check it out.</a></p>
+			</div>
 
 		</div>
 
@@ -15,8 +19,11 @@
 
 		<div class="project-display">
 
-			<p>{{currentProject.name}}</p>
+			<h2>{{currentProject.name}}</h2>
 			<img class="grid display" ng-src="{{currentProject.image}}" ng-animate-ref="{{currentProject.image}}">
+			
+			<br />
+
 			<a href="/#/">Back to portfolio.</a>
 
 		</div>
@@ -27,8 +34,15 @@
 
 		<div class="project-display">
 
-			<p>{{currentProject.tech}}</p>
-			<p><a href="{{currentProject.github}}">See code on Github</a></p>
+			<h3>Technology Used</h3>
+
+			<div class="side-text-container">
+				<ul>
+					<li ng-repeat="technology in currentProject.tech">{{technology}}</li>
+					<br />
+					<a href="{{currentProject.github}}">See code on Github</a>
+				</ul>
+			</div>
 
 		</div>
 

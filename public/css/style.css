@@ -32,6 +32,17 @@ html, body, .table-display-container{
 	width: 15vw;
 }
 
+.side-text-container{
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 4.5vw;
+    text-align: left;
+}
+
 .home{
 	display: block;
 	margin: auto;
