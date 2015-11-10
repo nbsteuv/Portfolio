@@ -1,16 +1,39 @@
 <table class="table-display-container">
-	<td class="cell-display-container">
+	
+	<td class="side-display-container" ng-show="showProjectData">
 
+		<div class="project-display">
 
-		<div class="display-grid project-display"">
-			
-			<img class="grid display" ng-src="{{currentProject.image}}" ng-animate-ref="{{currentProject.image}}">
-			<p>{{currentProject.name}}</p>
-			<p>{{currentProject.tagline}}</p>
-			<p><a href="{{currentProject.github}}">Github</a></p>
+			<p>{{currentProject.description}}</p>
+			<p><a href="{{currentproject.link}}">Check it out.</a></p>
 
 		</div>
 
 	</td>
+
+	<td class="img-display-container">
+
+		<div class="project-display">
+
+			<p>{{currentProject.name}}</p>
+			<img class="grid display" ng-src="{{currentProject.image}}" ng-animate-ref="{{currentProject.image}}">
+			<a href="/#/">Back to portfolio.</a>
+
+		</div>
+
+	</td>
+
+	<td class="side-display-container" ng-show="showProjectData">
+
+		<div class="project-display">
+
+			<p>{{currentProject.tech}}</p>
+			<p><a href="{{currentProject.github}}">See code on Github</a></p>
+
+		</div>
+
+	</td>
+
+
 </table>
 

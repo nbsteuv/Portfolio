@@ -1,3 +1,7 @@
+.container{
+	width: 100%;
+}
+
 .current-page.ng-enter{
 	transition: 1s;
 	opacity: 0;
@@ -23,15 +27,28 @@ html, body, .table-display-container{
 	margin: 0;
 }
 
-.cell-display-container{
+.img-display-container{
 	text-align: center;
+	width: 15vw;
+}
+
+.home{
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.grid-container{
+	display: block;
+	margin: auto;
+	width: 81vw;
 }
 
 .display-grid{
 	display: inline-block;
 	height: 40vh;
   	width: 25vw;
-  	margin: 1em;
+  	margin: 1vw;
   	vertical-align: bottom;
   	text-align: center;
 }
@@ -39,13 +56,14 @@ html, body, .table-display-container{
 .project-display{
 	display: block;
 	height: 80vh;
-	width: 50vw;
+	width: 32vw;
 	margin: auto;
 	padding-top: 1em;
 	text-align: center
 }
 
 img.grid{
+	display: block;
 	border: 1px solid black;
 	height: 40vh;
 	width: 25vw;
@@ -56,8 +74,8 @@ img.display{
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
-	height: 60vh;
-	width: 40vw;
+	height: 50vh;
+	width: 32vw;
 }
 
 img.grid.ng-anchor{

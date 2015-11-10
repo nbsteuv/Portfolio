@@ -9,7 +9,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
         .when('/project-detail', {
             templateUrl: 'views/project-detail.html',
-            controller: 'PortfolioController'
+            controller: 'ProjectDisplayController'
         })
 
         .when('/AvoidTheCircles', {

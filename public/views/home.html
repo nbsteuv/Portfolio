@@ -1,4 +1,4 @@
-<div class = "home">
+<div class="home" ng-show="displayGrid">
 	
 	Hello there. I'm Nick and I build stuff. 
 
@@ -8,6 +8,7 @@
 
 		<div class="display-grid" 
 			ng-repeat="project in projectsGrid" 
+			ng-animate-ref="{{project.id}}" 
 			ng-click="viewProject(project.id)">
 				<img class="grid" ng-src="{{project.image}}" ng-animate-ref="{{project.image}}">
 				<p>{{project.name}}</p>
