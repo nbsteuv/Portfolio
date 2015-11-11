@@ -11,6 +11,8 @@ var circleTypes={
 
 var resetButton= "<div class='resetbutton'><h2><center>Play Again</center></h2></div>";
 
+var portfolioLink= "<center><p><a href='http://portfolio-nsteuver.rhcloud.com'>Back to portfolio.</a></p></center>";
+
 var highScore1= 0.00;
 var highScore2= 0.00;
 var highScore3= 0.00;
@@ -158,7 +160,7 @@ function updateScores(newScore){
 	var highScorePlace4= "<div class='score' id='score4'><h2><center>" + highScore4.toFixed(2) + "</center></h2></div>";
 	var highScorePlace5= "<div class='score' id='score5'><h2><center>" + highScore5.toFixed(2) + "</center></h2></div>";
 
-	$("#highscores").append(highScorePlace1, highScorePlace2, highScorePlace3, highScorePlace4, highScorePlace5, resetButton);
+	$("#highscores").append(highScorePlace1, highScorePlace2, highScorePlace3, highScorePlace4, highScorePlace5, resetButton, portfolioLink);
 	$("#highscores").slideDown(1000);
 	$("#"+redScore).css("color", "#D10808");
 	$(".resetbutton").click(function(){
