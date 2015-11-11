@@ -14,6 +14,7 @@ angular.module('PortfolioCTRL', []).controller('PortfolioController', function($
 	
 	function viewProject(project){
 		$rootScope.current = project;
+		$location.path("/project-detail");
 	};
 
 	$scope.viewProject = viewProject;

@@ -1,10 +1,13 @@
-<table class="table-display-container">
+<table class="table-display-container dark">
 	
 	<td class="side-display-container" ng-show="showProjectData">
 
 		<div class="project-display">
 
-			<h3>Description</h3>
+			<div class="description-title-container">
+				<h3>Description</h3>
+			</div>
+
 
 			<div class="side-text-container">
 				<p>{{currentProject.description}}</p>
@@ -19,7 +22,11 @@
 
 		<div class="project-display">
 
-			<h2>{{currentProject.name}}</h2>
+			<div class="display-title-container">
+				<h2>{{currentProject.name}}</h2>
+			</div>
+
+
 			<img class="grid display" ng-src="{{currentProject.image}}" ng-animate-ref="{{currentProject.image}}">
 			
 			<br />
@@ -34,7 +41,9 @@
 
 		<div class="project-display">
 
-			<h3>Technology Used</h3>
+			<div class="tech-title-container">
+				<h3>Technology Used</h3>
+			</div>
 
 			<div class="side-text-container">
 				<ul>
