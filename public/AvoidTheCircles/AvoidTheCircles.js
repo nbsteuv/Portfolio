@@ -11,7 +11,7 @@ var circleTypes={
 
 var resetButton= "<div class='resetbutton'><h2><center>Play Again</center></h2></div>";
 
-var portfolioLink= "<center><p><a href='http://portfolio-nsteuver.rhcloud.com'>Back to portfolio.</a></p></center>";
+var portfolioLink= "<center><p class='portfolio-link'><a href='http://portfolio-nsteuver.rhcloud.com'>Back to portfolio.</a></p></center>";
 
 var highScore1= 0.00;
 var highScore2= 0.00;
@@ -185,6 +185,7 @@ function gameReset(){
 		$(".timer").html("<h1><center>"+ i.toFixed(2) + "</center></h1>");
 		$(".resetbutton").remove();
 		$(".score").remove();
+		$(".portfolio-link").remove();
 		$(".startbutton").fadeIn(500);
 		$(".redcircle").remove();
 	});
