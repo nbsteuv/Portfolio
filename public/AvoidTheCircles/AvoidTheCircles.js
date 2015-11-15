@@ -11,7 +11,7 @@ var circleTypes={
 
 var resetButton= "<div class='resetbutton'><h2><center>Play Again</center></h2></div>";
 
-var portfolioLink= "<center><p class='portfolio-link'><a href='http://portfolio-nsteuver.rhcloud.com'>Back to portfolio.</a></p></center>";
+var portfolioLink= "<center><h2 class='portfolio-link'><a href='http://portfolio-nsteuver.rhcloud.com'>Back to portfolio.</a></p></center>";
 
 var highScore1= 0.00;
 var highScore2= 0.00;
