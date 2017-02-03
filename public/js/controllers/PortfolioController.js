@@ -10,8 +10,10 @@ angular.module('PortfolioCTRL', []).controller('PortfolioController', function($
 
 	displayDelay();
 
-	$scope.projectsGrid = $rootScope.projects;
-	
+	$scope.projectsGrid = $rootScope.projects.sort(function(a,b){
+		return a.sortOrder - b.sortOrder;
+	});
+
 	function viewProject(project){
 		$rootScope.current = project;
 		$location.path("/project-detail");

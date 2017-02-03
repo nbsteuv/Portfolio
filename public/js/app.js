@@ -9,6 +9,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 	$rootScope.projects = [
 		{
 			id: 0,
+			sortOrder: 2,
 			name: "Avoid The Circles",
 			image: "img/AvoidTheCirclesSnapshot.JPG",
 			link: "/AvoidTheCircles",
@@ -20,6 +21,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 
 		{
 			id: 1,
+			sortOrder: 3,
 			name: "Workout App in C# and .NET",
 			image: "img/CSharpWorkoutAppSnapshot.JPG",
 			link: "/WorkoutAppCSharp",
@@ -31,6 +33,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 
 		{
 			id: 2,
+			sortOrder: 4,
 			name: "MEAN Stack Workout App",
 			image: "img/AngularWorkoutAppSnapshot.JPG",
 			link: "http://wkoutappmeanstack-nsteuver.rhcloud.com/",
@@ -41,7 +44,8 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 		},
 
 		{
-			id: 3,
+			id: 0,
+			sortOrder: 1,
 			name: "Sliding Tiles Word Game",
 			image: "img/TileGameDemo.JPG",
 			link: "/TileGameDemo",
