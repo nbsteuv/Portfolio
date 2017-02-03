@@ -103,7 +103,7 @@ html, body, .table-display-container{
 .grid-container{
 	display: block;
 	margin: auto;
-	width: 81vw;
+	width: 55vw;
 }
 
 .display-grid{
@@ -151,16 +151,4 @@ img.grid.ng-anchor{
 
 img.grid.ng-anchor-out{
 	transform: scale(4);
-}
-
-.display-title-container{
-
-}
-
-.description-title-container{
-
-}
-
-.tech-title-container{
-
 }
