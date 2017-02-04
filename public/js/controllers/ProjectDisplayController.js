@@ -16,6 +16,8 @@ angular.module('ProjectDisplayCTRL', []).controller('ProjectDisplayController', 
 
 	hideGrid()
 
-	$scope.currentProject = $rootScope.projects[$rootScope.current];
+	$scope.currentProject = $rootScope.projects.filter(function(project){
+		return project.id == $rootScope.current;
+	})[0];
 
 });

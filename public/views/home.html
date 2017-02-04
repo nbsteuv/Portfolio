@@ -1,5 +1,5 @@
 <div class="home" ng-show="displayGrid">
-	
+
 	<div class="title-container dark">
 
 		<h1 class="title">Hello there. I'm Nick and I build high-quality apps.</h1>
@@ -16,10 +16,11 @@
 
 	<div class="grid-container">
 
-		<div class="display-grid" 
-			ng-repeat="project in projectsGrid" 
-			ng-animate-ref="{{project.id}}" 
-			ng-href="/#/project-detail" 
+		<div class="display-grid"
+			ng-repeat="project in projectsGrid"
+			ng-Mouseenter="testAlert(project.id)"
+			ng-animate-ref="{{project.id}}"
+			ng-href="/#/project-detail"
 			ng-click="viewProject(project.id)">
 				<div class="grid-text-container dark">
 					<img class="grid" ng-src="{{project.image}}" ng-animate-ref="{{project.image}}">

@@ -44,7 +44,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 		},
 
 		{
-			id: 0,
+			id: 3,
 			sortOrder: 1,
 			name: "Sliding Tiles Word Game",
 			image: "img/TileGameDemo.JPG",

@@ -14,8 +14,8 @@ angular.module('PortfolioCTRL', []).controller('PortfolioController', function($
 		return a.sortOrder - b.sortOrder;
 	});
 
-	function viewProject(project){
-		$rootScope.current = project;
+	function viewProject(projectId){
+		$rootScope.current = projectId;
 		$location.path("/project-detail");
 	};
 
