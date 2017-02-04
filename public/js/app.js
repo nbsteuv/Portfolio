@@ -19,7 +19,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 			points: [
 				"Created from scratch using HTML, CSS, JavaScript, and jQuery",
 				"HTML elements scaled to browser size",
-    		"Circles randomly generated and appended to HTML, then animated to random screen locations",
+    		"Circles randomly generated and appended to DOM, then animated to random screen locations",
     		"Leave event bounds mouse pointer within game area when start button is clicked",
     		"Circle area calculation and pointer location comparison function detects pointer-circle collision",
     		"Timer and high-score list",

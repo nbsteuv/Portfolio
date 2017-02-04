@@ -22,10 +22,18 @@ h3{
 }
 
 ul{
-    list-style-position: inside;
-    padding-left: 4.5vw;
-    text-align: left;
-    color: white;
+	text-align: left;
+	color: white;
+}
+
+.tech-list{
+	list-style-position: inside;
+  padding-left: 4.5vw;
+}
+
+.feature-list{
+	position: relative;
+	left: -1vw;
 }
 
 a{

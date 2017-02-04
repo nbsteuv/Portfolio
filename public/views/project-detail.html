@@ -12,7 +12,7 @@
 			<div class="side-text-container">
 				<p>{{currentProject.description}}</p>
 				<ul>
-					<li ng-repeat="point in currentProject.points">{{point}}</li>
+					<li class="feature-list" ng-repeat="point in currentProject.points">{{point}}</li>
 				</ul>
 				<p><a href="{{currentProject.link}}">See it in action.</a></p>
 			</div>
@@ -49,7 +49,7 @@
 			</div>
 
 			<div class="side-text-container">
-				<ul>
+				<ul class="tech-list">
 					<li ng-repeat="technology in currentProject.tech">{{technology}}</li>
 					<br />
 					<a href="{{currentProject.github}}">See code on Github</a>
