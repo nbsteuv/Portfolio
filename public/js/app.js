@@ -73,11 +73,18 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 			name: "Sliding Tiles Word Game",
 			image: "img/TileGameDemo.JPG",
 			link: "/TileGameDemo",
-			tech: ["C#", ".Net Framework", "Unity Game Engine v5.5"],
+			tech: ["C#", ".Net Framework", "Unity Game Engine v5.5", "Visual Studio"],
 			tagline: "Form the randomly-generated words with the sliding tiles to win the game.",
 			description: "A sliding tile game created in C# .NET with the Unity game engine with a Web GL implementation.",
 			points: [
-
+				"Game objects scaled to orthographic screen size",
+				"Words selected at random from text files",
+				"Tiles instantiated at game start with text from selected words to form tiles",
+				"Tiles move to empty square on click event",
+				"Tiles will only move if they are adjacent to empty square",
+				"Cheat/debugger mode removes movement restriction, so any tile can move to empty square",
+				"Time and move counter, with reporting on win screen",
+				"Positions of word display, timer, and move counter coded for easy control within Unity editor",
 			],
 			github: "https://github.com/nbsteuv/Tile-Game"
 		},
