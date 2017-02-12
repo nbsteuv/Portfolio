@@ -111,7 +111,8 @@ html, body, .table-display-container{
 .grid-container{
 	display: block;
 	margin: auto;
-	width: 55vw;
+	width: 100vw;
+	text-align: center;
 }
 
 .display-grid{

@@ -9,7 +9,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 	$rootScope.projects = [
 		{
 			id: 0,
-			sortOrder: 2,
+			sortOrder: 2.5,
 			name: "Avoid The Circles",
 			date: "July 2015",
 			image: "img/AvoidTheCirclesSnapshot.JPG",
@@ -74,7 +74,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 			id: 3,
 			sortOrder: 1,
 			name: "Sliding Tiles Word Game",
-			date: "January 2017",
+			date: "February 2017",
 			image: "img/TileGameDemo.JPG",
 			link: "/TileGameDemo",
 			tech: ["C#", ".Net Framework", "Unity Game Engine v5.5", "Visual Studio"],
@@ -83,7 +83,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 			points: [
 				"Game objects scaled to orthographic screen size",
 				"Words selected at random from text files",
-				"Tiles instantiated at game start with text from selected words to form tiles",
+				"Tiles instantiated at game start with text from selected words to form tiles from prefabs",
 				"Tiles move to empty square on click event",
 				"Tiles will only move if they are adjacent to empty square",
 				"Cheat/debugger mode removes movement restriction, so any tile can move to empty square",
@@ -91,6 +91,30 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 				"Positions of word display, timer, and move counter coded for easy control within Unity editor",
 			],
 			github: "https://github.com/nbsteuv/Tile-Game"
+		},
+
+		{
+			id: 4,
+			sortOrder: 2,
+			name: "Breakout Game Clone",
+			date: "January 2017",
+			image: "img/BreakoutCloneScreenshot.JPG",
+			link: "/BreakoutCloneDemo",
+			tech: ["C#", ".Net Framework", "Unity Game Engine v5.5", "Visual Studio"],
+			tagline: "A clone of the classic Atari game",
+			description: "Use the paddle to keep the ball in play and destroy the bricks.",
+			points: [
+				"A fully 3-D game, bounded to the X and Y axes for a 2-dimensional effect",
+				"Game physics using gravity, friction, and velocity changes",
+				"Richochet and event triggers on game object collisions",
+				"Direction given to ball on impact with paddle proportional to its collision point distance from the paddle's center",
+				"GUI life and score counter",
+				"Multiple levels, with names and sort order defined in the editor and loaded in code",
+				"Bricks have varying hit points and behavior--some can only be destroyed from the top",
+				"In-game music and randomized sounds on collisions",
+				"Falling powerups that only collide with paddle once spawned",
+			],
+			github: "https://github.com/nbsteuv/BreakoutClone"
 		},
 	];
 });
