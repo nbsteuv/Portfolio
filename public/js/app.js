@@ -31,7 +31,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 		{
 			id: 1,
 			sortOrder: 3,
-			name: "Workout App in C# and .NET",
+			name: "Workout App in C# .NET",
 			date: "September 2015",
 			image: "img/CSharpWorkoutAppSnapshot.JPG",
 			link: "/WorkoutAppCSharp",
@@ -73,7 +73,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 		{
 			id: 3,
 			sortOrder: 1,
-			name: "Sliding Tiles Word Game",
+			name: "C# .NET in Unity 3D: Sliding Tiles Word Game",
 			date: "February 2017",
 			image: "img/TileGameDemo.JPG",
 			link: "/TileGameDemo",
@@ -89,6 +89,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 				"Cheat/debugger mode removes movement restriction, so any tile can move to empty square",
 				"Time and move counter, with reporting on win screen",
 				"Positions of word display, timer, and move counter coded for easy control within Unity editor",
+				"Choose from a 4x4 or 5x5 tile game"
 			],
 			github: "https://github.com/nbsteuv/Tile-Game"
 		},
@@ -96,7 +97,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 		{
 			id: 4,
 			sortOrder: 2,
-			name: "Breakout Game Clone",
+			name: "C# .NET in Unity 3D: Breakout Game Clone",
 			date: "January 2017",
 			image: "img/BreakoutCloneScreenshot.JPG",
 			link: "/BreakoutCloneDemo",
