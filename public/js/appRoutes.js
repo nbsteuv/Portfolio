@@ -12,6 +12,14 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             controller: 'ProjectDisplayController'
         })
 
+        .when('/TileGameDemo', {
+            templateUrl: 'TileGameDemo/index.html'
+        })
+
+        .when('/BreakoutCloneDemo', {
+            templateUrl: 'BreakoutCloneDemo/index.html'
+        })
+
         .when('/AvoidTheCircles', {
             templateUrl: 'AvoidTheCircles/index.html'
         });
