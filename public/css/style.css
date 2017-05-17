@@ -161,3 +161,7 @@ img.grid.ng-anchor{
 img.grid.ng-anchor-out{
 	transform: scale(4);
 }
+
+.template-wrap{
+	top: 60%;
+}

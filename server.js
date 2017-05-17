@@ -10,7 +10,7 @@ var fs             = require('fs');
 var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 
-app.use(express.static(__dirname + '/public')); 
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
   writeFile('/public/views/index.html', req, res);
@@ -18,7 +18,15 @@ app.get('/', function (req, res) {
 
 app.get('/WorkoutAppCSharp', function (req, res) {
   res.download(__dirname + '/public/WorkoutAppCSharp/WorkoutAppC#.zip');
-})
+});
+
+app.get('/TileGameDemoDownload', function (req, res) {
+  res.download(__dirname + '/public/TileGameDemo/TileGameDemo.zip');
+});
+
+app.get('/BreakoutCloneDemoDownload', function (req, res) {
+  res.download(__dirname + '/public/BreakoutCloneDemo/Bricked.zip');
+});
 
 function writeFile(fileName, req, res) {
   fs.readFile(__dirname + fileName, function (err, data) {
@@ -33,6 +41,6 @@ function writeFile(fileName, req, res) {
   });
  }
 
-app.listen(port, ip);               
-               
+app.listen(port, ip);
+
 console.log('App is testable on http://localhost:' + port);
