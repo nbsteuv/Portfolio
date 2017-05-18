@@ -12,7 +12,7 @@ p{
 }
 
 h2{
-	color: white;
+	color: white;a
 	text-align: center;
 }
 
@@ -38,6 +38,12 @@ ul{
 
 a{
 	font-weight: bold;
+	font-size: 25px;
+	color: #5bb2ff;
+}
+
+a:visited{
+	color: #e0c9ff;
 }
 
 .dark{
@@ -165,3 +171,37 @@ img.grid.ng-anchor-out{
 .template-wrap{
 	top: 60%;
 }
+
+.header {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.header > div {
+		padding: 5px;
+    display: table-cell;
+}
+.header-left {
+}
+.header-center {
+    width: 500px;
+		font-size: 25px;
+		color: white;
+		text-align: center;
+}
+.header-right {
+		text-align: right;
+}
+
+/*.header-left{
+	margin-left: 0;
+}
+
+.header-right{
+	margin-right: 0;
+}
+
+.header-center{
+	display: inline-block;
+	margin:0 auto;
+}*/

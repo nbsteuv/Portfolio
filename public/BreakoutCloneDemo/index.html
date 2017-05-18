@@ -9,16 +9,20 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
-  <body class="template">
-    <div class="return-link dark">
-      <a href="/">Back to portfolio</a>
+  <body>
+    <div class="header">
+    <div class="header-left">
+      <a href="/">Back To Portfolio</a>
     </div>
-    <div class="outer-instruction-container">
-      <div class="instruction-container dark">
-        <h3>Problems loading? <a href="/BreakoutCloneDemoDownload">Download desktop version here.</a></h3>
-        <h3>Press Q to activate debug mode</h3>
-      </div>
+    <div class="header-center">
+      <span class="download-callout">Problems loading? <a href="/BreakoutCloneDemoDownload">Download desktop version here.</a></span>
+      <br>
+      <span class="debug-callout">Press Q to activate debug mode</span>
     </div>
+    <div class="header-right">
+      <a href="https://github.com/nbsteuv/BreakoutClone">See Code On Github</a>
+    </div>
+  </div>
     <div class="template-wrap clear">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="800px"></canvas>
       <br>
@@ -40,10 +44,6 @@
     memUrl: "Release/Web Build.mem",
   };
 </script>
-
-
-
 <script src="Release/UnityLoader.js"></script>
-
   </body>
 </html>
