@@ -77,7 +77,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 			date: "February 2017",
 			image: "img/TilePuzzlerSnapshot.JPG",
 			link: "/TilePuzzlerDemo",
-			tech: ["C#", ".Net Framework", "Unity Game Engine v5.5", "Visual Studio"],
+			tech: ["C#", ".Net Framework", "Unity Game Engine v5.6", "Visual Studio"],
 			tagline: "Form the randomly-generated words with the sliding tiles to win the game.",
 			description: "A sliding tile game created in C# .NET with the Unity game engine with a Web GL implementation.",
 			points: [
@@ -101,7 +101,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 			date: "January 2017",
 			image: "img/BrickedSnapshot.JPG",
 			link: "/BrickedDemo",
-			tech: ["C#", ".Net Framework", "Unity Game Engine v5.5", "Visual Studio"],
+			tech: ["C#", ".Net Framework", "Unity Game Engine v5.6", "Visual Studio"],
 			tagline: "A clone of the classic Atari game",
 			description: "Use the paddle to keep the ball in play and destroy the bricks.",
 			points: [
@@ -116,6 +116,30 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 				"Falling powerups that only collide with paddle once spawned",
 			],
 			github: "https://github.com/nbsteuv/BreakoutClone"
+		},
+
+		{
+			id: 4,
+			sortOrder: 0.9,
+			name: "Alien Attack: A Space Invaders Clone in C# .NET with Unity 3D",
+			date: "May 2017",
+			image: "img/AlienAttackScreenshot.JPG",
+			link: "/AlienAttackDemo",
+			tech: ["C#", ".Net Framework", "Unity Game Engine v5.6", "Visual Studio"],
+			tagline: "A sprite-based Space Invaders clone",
+			description: "Control the player with the mouse and destroy the aliens before they destroy you.",
+			points: [
+				"A sprite-based 2D game with music and sound effects",
+				"GUI overlay for menu, life counter, and score counter",
+				"Space Invaders style movement for enemies, with independent horizontal row movement and united vertical movement",
+				"Enemies fire at random intervals to avoid being predictable",
+				"Sprite rendering order employed to keep enemy fire from spawning on top of enemies",
+				"Layers employed to only allow collisions between projectile-target, enemy-player, and projectile-projectile",
+				"Event systems in place for managing score and lives",
+				"Particle system effects for explosions",
+				"Score display on win/lose screens counts up to final score",
+			],
+			github: "https://github.com/nbsteuv/SpaceInvaders"
 		},
 	];
 });

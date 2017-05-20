@@ -28,6 +28,10 @@ app.get('/BreakoutCloneDemoDownload', function (req, res) {
   res.download(__dirname + '/public/BreakoutCloneDemo/Bricked.zip');
 });
 
+app.get('/AlienAttackDemoDownload', function (req, res) {
+  res.download(__dirname + '/public/AlienAttackDemo/AlienAttackDemo.zip');
+});
+
 function writeFile(fileName, req, res) {
   fs.readFile(__dirname + fileName, function (err, data) {
     if (err) {
