@@ -44,7 +44,7 @@ function writeFile(fileName, req, res) {
   });
  }
 
-app.listen(port, function(){
-  console.log('App is testable on port ' + port);
+app.listen(PORT, function(){
+  console.log('App is testable on port ' + PORT);
 });
 
