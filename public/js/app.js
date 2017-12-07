@@ -54,7 +54,7 @@ angular.module('portfolio', ['ngRoute', 'ngAnimate', 'appRoutes', 'PortfolioCTRL
 			name: "MEAN Stack Workout App",
 			date: "October 2015",
 			image: "img/AngularWorkoutAppSnapshot.JPG",
-			link: "http://wkoutappmeanstack.herokuapp.com/",
+			link: "https://wkoutappmeanstack.herokuapp.com/",
 			tech: ["AngularJS", "MongoDB through MongoLab", "Express", "NodeJS", "SHA1 hash encryption through CryptoJS", "User authentication through Passport and Cookie Parser", "Twitter Bootstrap"],
 			tagline: "A MEAN Stack application for storing weightlifting data.",
 			description: "An online iteration of the C# .NET workout app, this application allows users to create an account with a SHA1-encrypted password and save their workout data to a MongoLab-hosted Mongo database.",
