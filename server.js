@@ -20,7 +20,7 @@ app.get('/WorkoutAppCSharp', function (req, res) {
 });
 
 app.get('/TileGameDemoDownload', function (req, res) {
-  res.download(__dirname + '/public/TileGameDemo/TileGameDemo.zip');
+  res.download(__dirname + '/public/TilePuzzlerDemo/TileGameDemo.zip');
 });
 
 app.get('/BreakoutCloneDemoDownload', function (req, res) {
