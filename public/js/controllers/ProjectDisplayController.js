@@ -5,7 +5,7 @@ angular.module('ProjectDisplayCTRL', []).controller('ProjectDisplayController', 
 	function displayDelay(){
 		$timeout(function(){
 			$scope.showProjectData = true;
-		}, 2000);
+		}, 0);
 	};
 
 	displayDelay();
@@ -14,7 +14,7 @@ angular.module('ProjectDisplayCTRL', []).controller('ProjectDisplayController', 
 		$rootScope.gridDisplay = false;
 	}
 
-	hideGrid()
+	// hideGrid()
 
 	$scope.currentProject = $rootScope.projects.filter(function(project){
 		return project.id == $rootScope.current;
