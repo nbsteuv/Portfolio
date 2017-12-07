@@ -23,8 +23,8 @@ app.get('/TileGameDemoDownload', function (req, res) {
   res.download(__dirname + '/public/TilePuzzlerDemo/TileGameDemo.zip');
 });
 
-app.get('/BreakoutCloneDemoDownload', function (req, res) {
-  res.download(__dirname + '/public/BreakoutCloneDemo/Bricked.zip');
+app.get('/BrickedDemoDownload', function (req, res) {
+  res.download(__dirname + '/public/Bricked/Bricked.zip');
 });
 
 app.get('/AlienAttackDemoDownload', function (req, res) {
