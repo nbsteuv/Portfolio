@@ -24,7 +24,7 @@ app.get('/TileGameDemoDownload', function (req, res) {
 });
 
 app.get('/BrickedDemoDownload', function (req, res) {
-  res.download(__dirname + '/public/Bricked/Bricked.zip');
+  res.download(__dirname + '/public/BrickedDemo/Bricked.zip');
 });
 
 app.get('/AlienAttackDemoDownload', function (req, res) {
